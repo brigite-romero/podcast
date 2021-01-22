@@ -1,0 +1,63 @@
+.logos{
+    .title-logos{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        padding: 48px 16px 0 16px
+    }
+
+    .image-logos{
+        padding: 37px 0 42px 0;
+        height: 850px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .logo-container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .title-logo{
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 600;
+                font-size: 24px;
+                color: #060A24;
+                letter-spacing: 0;
+                text-align: center;
+                padding: 13px 0 0 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (min-width:1440px){
+    .logos{
+        .title-logos{
+            font-size: 48px;
+            line-height: 62px;
+            padding: 64px 0 0 200px
+        }
+    
+        .image-logos{
+            padding: 69px 0 34px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            height: 200px;
+            width: 1000px;
+            margin: 0 auto;
+            .logo-container{
+                padding: 0 0 29px 0;
+                width: 100%;
+                .title-logo{
+                    width: 220px;
+                }
+            }
+        }
+    }
+}

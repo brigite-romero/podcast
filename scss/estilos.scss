@@ -1,0 +1,14 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import './menu.scss';
+@import './banner.scss';
+@import './episodes.scss';
+@import './telephone.scss';
+@import './guests.scss';
+@import './logos.scss';
+@import './novelties.scss';
+@import './footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap');

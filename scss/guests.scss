@@ -1,0 +1,37 @@
+.guests{
+    .title-guests{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        padding: 54px 16px 14px 16px;
+    }
+    .imgs-guests{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .img-guests{
+        width: 100%;
+        margin: -2px;
+        }
+    }
+}
+
+@media (min-width:1440px){
+    .guests{
+        .title-guests{
+            font-size: 48px;
+            line-height: 62px;
+            padding: 64px 0 36px 200px;
+        }
+        .imgs-guests{
+            .img-guests{
+            width: 33.33%;
+            margin: -2px;
+            }
+        }
+    }
+}

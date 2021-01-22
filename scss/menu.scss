@@ -1,0 +1,120 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    color: black;
+    position: relative;
+    padding: 0px;
+
+    .logo {
+        padding: 10px 0px 10px 16px;
+    }
+
+    .menu-container{
+        .menu-check {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            &:checked ~ label{
+                .icon-menu {
+                    display: none;
+                }
+                .closed{
+                    display: block;
+                }
+            }
+            &:checked ~ .menu{
+                display: block;
+            }
+        }
+        .icon-menu{
+            padding: 16px 19px 16px;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+
+            .line{
+                background: black;
+                border-radius: 8px;
+                width: 18px;
+                height: 2px;
+                margin: 2px;
+               
+             }
+        }
+        .closed {
+            color: #060A24;
+            padding: 14px 16px 14px;
+            width: 14px;
+            height: 14px;
+            font-size: 14px;
+            
+        }
+        .closed, .menu {
+            display: none;
+        }
+        
+        .menu {
+            position: absolute;
+            top: 44px;
+            left: 0;
+            background: #0000EC;
+            width: 100%;
+
+            .item {
+                padding: 16px;
+                font-family: 'IBM Plex Mono', monospace;
+                font-weight: 200;
+                font-size: 16px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                line-height: 28px; 
+                cursor: pointer;
+            }
+        } 
+    }
+}
+
+@media (min-width: 1440px){
+    .header {
+        height: 80px;
+    
+        .logo {
+            padding: 22px 0px 22px 100px;
+            width: 36px;
+            height: 36px;
+        }
+    
+        .menu-container{
+            .menu-check, .icon-menu, .closed { 
+                display: none;
+            }
+            
+            .menu {
+                padding: 26px 100px;
+                position: static;
+                display: flex;
+                flex-direction: row;
+                background: white;
+                width: 550px;
+
+                .item {
+                    padding: 0px 0px 0px 48px;
+                    color: black;
+
+                    &:hover {
+                        color: #00F3BB;
+                        text-decoration: line-through;
+                    }
+
+                    &:active {
+                        color: rgba(6,10,36,0.56);
+                    }
+                }
+            } 
+        }
+    }
+}

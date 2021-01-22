@@ -1,0 +1,50 @@
+.footer{
+    background: white;
+    height: 121px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .author{
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 400;
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    .networks{
+        padding: 16px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+        
+        .fab{
+            width: 16px;
+            height: 28px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width:1440px){
+    .footer{
+        height: 95px;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 100px;
+        .author{
+            font-size: 16px;
+            line-height: 28px;
+        }
+        .networks{
+            padding: 0;
+            
+            .fab{
+                width: 18px;
+                height: 28px;
+            }
+        }
+    }
+}

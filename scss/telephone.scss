@@ -1,0 +1,64 @@
+.telephone{
+    .container-telephone{
+        max-width: 360px;
+        width: 100%;
+        line-height: 0;
+        position: relative;
+        z-index: 2;
+        padding: 37px 0 0 0;
+        margin: 0 auto;
+        .img-telephone{
+           width: 100%;
+        }
+    }
+
+    .text-telephone {
+        .title-telephone{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 400;
+            font-size: 36px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 42px;
+            padding: 27px 16px 8px 16px;
+        }
+    
+        .paragraphs{
+            padding: 0 16px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 400;
+            font-size: 14px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 22px;
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    .telephone{
+        display: flex;
+        align-items: center;
+        padding: 0 256px 0 200px;
+        .container-telephone{
+            max-width: 457.6px;
+            padding: 18px 0 0 0;
+        }
+
+        .text-telephone {
+            padding: 24px 0 0 0;
+            
+            .title-telephone{
+                font-size: 48px;
+                line-height: 62px;
+                padding: 0 16px 8px 16px;
+            }
+        
+            .paragraphs{
+                font-size: 16px;
+                line-height: 24px;
+                width: 464px;
+            }
+        }
+    }
+}

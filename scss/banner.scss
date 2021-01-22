@@ -1,0 +1,104 @@
+.banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 24px 0;
+
+    .title {
+        display: flex;
+        flex-flow: row wrap;
+        font-family: 'IBM Plex Sans';
+        font-weight: 400;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        padding: 29px 0 0 16px;
+
+        .world {
+            text-decoration: line-through 2px;
+            padding: 0 10px;
+        }
+    }
+
+    .text-mobile, .text-compu{
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 400;
+        font-size: 14px;
+        color: #060a24 ;
+        letter-spacing: 0;
+        line-height: 22px;
+        padding: 16px 16px 36px;
+    }
+
+    .text-compu{
+        display: none;
+    }
+    .bottom {
+        background: #00F3BB;
+        width: 288px;
+        height: 48px;
+        margin: 0;
+        cursor: pointer;
+
+        .text-bottom {
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 600;
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 22px;
+            margin: 0;
+            padding: 13px;
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    .banner {
+        align-items: flex-start;
+        padding: 120px 0 0 200px;
+        .title {
+            font-size: 64px;
+            line-height: 84px;
+            padding: 0;
+
+            .world {
+                text-decoration: line-through 4px;
+            }
+        }
+
+        .text-mobile{
+            display: none;
+        }
+    
+        .text-compu{
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 0 0 56px 0px;
+            width: 628px;
+        }
+    
+        .bottom {
+            width: 226px;
+            height: 56px;
+
+            &:hover {
+                background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+            }
+    
+            .text-bottom {
+                font-size: 18px;
+                line-height: 24px;
+                padding: 16px;
+
+                &:hover {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    
+}
