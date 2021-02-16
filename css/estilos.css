@@ -66,6 +66,7 @@ body {
   padding: 16px;
 }
 .header .menu-container .menu .con-item .item {
+  text-decoration: none;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 200;
   font-size: 16px;
@@ -142,14 +143,17 @@ body {
 .banner .text-compu {
   display: none;
 }
-.banner .bottom {
+.banner .bottom-banner {
   background: #00F3BB;
   width: 288px;
   height: 48px;
   margin: 0;
   cursor: pointer;
 }
-.banner .bottom .text-bottom {
+.banner .bottom-banner .bottom {
+  text-decoration: none;
+}
+.banner .bottom-banner .bottom .text-bottom {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   font-size: 16px;
@@ -184,19 +188,19 @@ body {
     padding: 0 0 56px 0px;
     width: 628px;
   }
-  .banner .bottom {
+  .banner .bottom-banner {
     width: 226px;
     height: 56px;
   }
-  .banner .bottom:hover {
+  .banner .bottom-banner:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   }
-  .banner .bottom .text-bottom {
+  .banner .bottom-banner .bottom .text-bottom {
     font-size: 18px;
     line-height: 24px;
     padding: 16px;
   }
-  .banner .bottom .text-bottom:hover {
+  .banner .bottom-banner .bottom .text-bottom:hover {
     color: #FFFFFF;
   }
 }
@@ -448,7 +452,10 @@ body {
   margin: 0;
   cursor: pointer;
 }
-.novelties .bottom-novelties .text-bottom-novelties {
+.novelties .bottom-novelties .bottom {
+  text-decoration: none;
+}
+.novelties .bottom-novelties .bottom .text-bottom-novelties {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   font-size: 16px;
@@ -481,13 +488,13 @@ body {
   .novelties .bottom-novelties:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   }
-  .novelties .bottom-novelties .text-bottom-novelties {
+  .novelties .bottom-novelties .bottom .text-bottom-novelties {
     font-size: 18px;
     line-height: 24px;
     margin: 0;
     padding: 16px;
   }
-  .novelties .bottom-novelties .text-bottom-novelties:hover {
+  .novelties .bottom-novelties .bottom .text-bottom-novelties:hover {
     color: #FFFFFF;
   }
 }
