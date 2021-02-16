@@ -73,7 +73,7 @@ body {
   cursor: pointer;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .header {
     height: 80px;
   }
@@ -157,7 +157,7 @@ body {
   padding: 13px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .banner {
     align-items: flex-start;
     padding: 120px 0 0 200px;
@@ -242,7 +242,7 @@ body {
   background-color: transparent;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .episodes .background-episodes::before {
     top: 85px;
     height: 900px;
@@ -253,14 +253,14 @@ body {
     padding: 186px 0 0 200px;
   }
   .episodes .podcasts {
-    padding: 0 28px 0 100px;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 0 60px 0;
   }
   .episodes .podcasts .podcast {
-    width: 584px;
+    width: 40%;
     height: 232px;
-    padding: 26px 72px 46px 0;
   }
 }
 .telephone .container-telephone {
@@ -294,18 +294,21 @@ body {
   line-height: 22px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .telephone {
     display: flex;
     align-items: center;
-    padding: 0 256px 0 200px;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 40px;
   }
   .telephone .container-telephone {
-    max-width: 457.6px;
-    padding: 18px 0 0 0;
+    max-width: 320px;
   }
   .telephone .text-telephone {
     padding: 24px 0 0 0;
+    text-align: justify;
+    margin: 50px;
   }
   .telephone .text-telephone .title-telephone {
     font-size: 48px;
@@ -337,7 +340,7 @@ body {
   margin: -2px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .guests .title-guests {
     font-size: 48px;
     line-height: 62px;
@@ -380,7 +383,7 @@ body {
   margin: 0;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .logos .title-logos {
     font-size: 48px;
     line-height: 62px;
@@ -453,7 +456,7 @@ body {
   padding: 13px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .novelties {
     padding: 0 0 151px 0;
   }
@@ -513,7 +516,7 @@ body {
   cursor: pointer;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .footer {
     height: 95px;
     justify-content: space-between;

@@ -35,18 +35,21 @@
     }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1024px){
     .telephone{
         display: flex;
         align-items: center;
-        padding: 0 256px 0 200px;
+        max-width: 1024px;
+        margin: 0 auto;
+        margin-top: 40px;
         .container-telephone{
-            max-width: 457.6px;
-            padding: 18px 0 0 0;
+            max-width: 320px;
         }
 
         .text-telephone {
             padding: 24px 0 0 0;
+            text-align: justify;
+            margin: 50px;
             
             .title-telephone{
                 font-size: 48px;

@@ -49,7 +49,7 @@
     }
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1024px){
     .episodes{
         .background-episodes::before{
             top: 85px;
@@ -63,14 +63,14 @@
         }
 
         .podcasts{
-            padding: 0 28px 0 100px ;
             flex-wrap: wrap;
             flex-direction: row;
+            justify-content: space-around;
+            padding: 40px 0 60px 0 ;
 
             .podcast {
-                width: 584px;
+                width: 40%;
                 height: 232px;
-                padding: 26px 72px 46px 0;
             }
         }
     }
